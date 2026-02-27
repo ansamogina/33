@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move&Care — Прайс-лист</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f4f1ed;
+      color: #2e2e2e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #606c38;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 40px;
+    }
+
+    h2 {
+      color: #283618;
+      border-bottom: 2px solid #bc6c25;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .packages {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .package {
+      flex: 1;
+      background-color: #faf9f6;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      padding: 30px 25px 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .package:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .package h3 {
+      color: #606c38;
+      text-transform: uppercase;
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .package p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .price-block {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .main-price {
+      font-weight: bold;
+      color: #bc6c25;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .extra-price {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .extra {
+      margin-top: 50px;
+      background-color: #faf9f6;
+      border-radius: 10px;
+      padding: 30px;
+      border: 1px solid #ddd;
+    }
+
+    .extra ul {
+      columns: 2;
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #606c38;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 900px) {
+      .packages {
+        flex-direction: column;
+      }
+
+      .package {
+        width: 100%;
+      }
+
+      .extra ul {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Move&Care</h1>
+    <p>Ваш комфортный переезд под контролем профессионалов</p>
+  </header>
+
+  <section>
+    <h2>Пакеты услуг</h2>
+    <div class="packages">
+      <div class="package">
+        <div>
+          <h3>Базовый</h3>
+          <p>Все необходимое для аккуратного переезда квартиры или офиса.</p>
+          <ul>
+            <li>Грузчики</li>
+            <li>Стрейч-пленка</li>
+          </ul>
+        </div>
+        <div class="price-block">
+          <div class="main-price">23 000 ₽</div>
+          <div class="extra-price">+ 10 000 ₽ за газель</div>
+        </div>
+      </div>
+
+      <div class="package">
+        <div>
+          <h3>Комфорт</h3>
+          <p>Оптимальный вариант для тех, кто ценит порядок и организацию.</p>
+          <ul>
+            <li>Грузчики</li>
+            <li>Маркировка коробок</li>
+            <li>Стрейч-пленка</li>
+            <li>Пузырчатая пленка</li>
+            <li>Расстановка мебели</li>
+          </ul>
+        </div>
+        <div class="price-block">
+          <div class="main-price">35 000 ₽</div>
+          <div class="extra-price">+ 10 000 ₽ за газель</div>
+        </div>
+      </div>
+
+      <div class="package">
+        <div>
+          <h3>Премиум</h3>
+          <p>Полный контроль над переездом без стресса. Мы делаем всё за вас.</p>
+          <ul>
+            <li>Грузчики</li>
+            <li>Маркировка коробок</li>
+            <li>Коробки для личных вещей</li>
+            <li>Стрейч-пленка</li>
+            <li>Пузырчатая пленка</li>
+            <li>Страховка имущества</li>
+            <li>Расстановка мебели</li>
+            <li>Вывоз мусора</li>
+          </ul>
+        </div>
+        <div class="price-block">
+          <div class="main-price">53 000 ₽</div>
+          <div class="extra-price">+ 10 000 ₽ за газель</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="extra">
+      <h2>Дополнительные услуги</h2>
+      <p>Стоимость рассчитывается <strong>индивидуально</strong> в зависимости от объема и сложности работ:</p>
+      <ul>
+        <li>Клининг после переезда</li>
+        <li>Сборка и разборка мебели</li>
+        <li>Упаковочный и укрывной материал</li>
+        <li>Вывоз мусора</li>
+        <li>Мелкий ремонт</li>
+        <li>Хранение вещей</li>
+      </ul>
+
+      <h2>Специфические грузы</h2>
+      <p>Перевозка <strong>пианино, сейфов, антиквариата и другого имущества</strong> обсуждается и оценивается индивидуально.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Move&Care — Мы переезжаем с вами, чтобы вы чувствовали себя дома в любом месте.
+  </footer>
+</body>
+</html>
